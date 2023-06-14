@@ -13,6 +13,11 @@ Creating `tbool`s:
 #include "tbool.h"
 int main() {
 
+  // There is an enum for all possible states:
+  // tb::TRUE
+  // tb::NEUTRAL
+  // tb::FALSE
+
   // All of these are valid
   tb::tbool neutral = tb::NEUTRAL;        // 0
   tb::tbool _false  = false;              // -1
