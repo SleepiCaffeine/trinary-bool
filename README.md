@@ -1,5 +1,6 @@
 # trinary-bool
 I was bored one night while making blackjack, and decided to make this monstrocity...
+
 This is a custom data type that supports basically everything a regular boolean does, however boolean arithmetic with the standard binary booleans will result in issues.
 
 ## How to use it
@@ -49,6 +50,12 @@ if (_false + _true == (neutral + _true * _false + neutral) / _true + _true)
   // This actually works and will run code below
 ```
 
+Other functions:
+```
+int neutral_value    = neutral.get();              // (int)0
+int int_cast_neutral = static_cast<int>(neutral);  // (int)0
+bool neutral_to_bool = neutral.toBool();           // true
+```
 ## Known Bugs
 - Sometimes comparisons fail due to not being positioned on the correct side of the comparison. I am working on this, and there might be a fix in the near-ish future?
 - On some comparisons, ambigious comparison warnings may appear. I have no clue how to fix that, but I'm trying.
