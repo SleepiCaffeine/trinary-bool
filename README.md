@@ -3,6 +3,8 @@ I was bored one night while making blackjack, and decided to make this monstroci
 
 This is a custom data type that supports basically everything a regular boolean does, however boolean arithmetic with the standard binary booleans will result in issues.
 
+**Keep in mind this is still a WIP, I'm still working on some issues**
+
 ## How to use it
 `tbool` uses 1 as *true*, 0 as *neutral*, and -1 as *false*.
 
